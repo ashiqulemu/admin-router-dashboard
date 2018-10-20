@@ -1,0 +1,29 @@
+@extends('welcome')
+
+
+@section("content")
+
+    {{--<router-view> </router-view>--}}
+    <main class="app-content">
+        <div class="app-title">
+            <div>
+                <h1><i class="fa fa-dashboard"></i> Dashboard</h1>
+            </div>
+            <ul class="app-breadcrumb breadcrumb">
+                <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+            </ul>
+        </div>
+
+
+        {{--<router-link :to="{name:'dashboard'}" class="btn btn-dark">Home</router-link>--}}
+        {{--<router-link :to="{name:'about'}"  class="btn btn-dark">About</router-link>--}}
+        {{--<router-link :to="{name:'contact'}"  class="btn btn-dark">Contact</router-link>--}}
+
+
+
+        <router-view></router-view>
+
+    </main>
+
+@endsection
